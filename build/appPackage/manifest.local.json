@@ -1,0 +1,71 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "997bf8ce-e098-4abc-847c-1e17599f51ef",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termsofuse"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "dailybotg3-local-debug",
+        "full": "dailybotg3-local-debug"
+    },
+    "description": {
+        "short": "Short description of dailybotg3-local-debug",
+        "full": "Full description of dailybotg3-local-debug"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "8dd0b9e5-3367-4280-ba4e-1a6e8ca2e75e",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "welcome",
+                            "description": "Resend welcome card of this Bot"
+                        },
+                        {
+                            "title": "learn",
+                            "description": "Learn about Adaptive Card and Bot Command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "75ac-2a01-cb04-ad0-f000-88ee-5d45-cb5a-2f55.ngrok.io"
+    ],
+    "webApplicationInfo": {
+        "id": "67bab224-b0e2-4ed7-b3bd-c2766e6ca7da",
+        "resource": "api://botid-8dd0b9e5-3367-4280-ba4e-1a6e8ca2e75e"
+    }
+}
